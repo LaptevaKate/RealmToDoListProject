@@ -19,6 +19,9 @@
 		5E242A792A86361800F8F79F /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A782A86361800F8F79F /* TodoListViewController.swift */; };
 		5E242A7B2A863D4400F8F79F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A7A2A863D4400F8F79F /* Item.swift */; };
 		5E242A7D2A863D5700F8F79F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A7C2A863D5700F8F79F /* Category.swift */; };
+		5E242A822A8A1F0B00F8F79F /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A812A8A1F0B00F8F79F /* SwipeTableViewController.swift */; };
+		5E242A842A8A51F200F8F79F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A832A8A51F200F8F79F /* ColorExtension.swift */; };
+		5E242A872A8A52E200F8F79F /* SearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A862A8A52E200F8F79F /* SearchBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		5E242A782A86361800F8F79F /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		5E242A7A2A863D4400F8F79F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E242A7C2A863D5700F8F79F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		5E242A812A8A1F0B00F8F79F /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		5E242A832A8A51F200F8F79F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5E242A862A8A52E200F8F79F /* SearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarExtension.swift; sourceTree = "<group>"; };
 		F760A53B9472947CD7C11A93 /* Pods_RealmToDoListProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmToDoListProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,7 +64,6 @@
 				4E4D9BDE1705EF87B25A5BB0 /* Pods-RealmToDoListProject.debug.xcconfig */,
 				13CD685EB3FDA3CF539E5A44 /* Pods-RealmToDoListProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +90,7 @@
 			children = (
 				5E242A5B2A824B8C00F8F79F /* AppDelegate.swift */,
 				5E242A5D2A824B8C00F8F79F /* SceneDelegate.swift */,
+				5E242A852A8A521900F8F79F /* SupportFiles */,
 				5E242A7E2A863D7000F8F79F /* Data Model */,
 				5E242A7F2A863E8D00F8F79F /* Controllers */,
 				5E242A802A863EA300F8F79F /* View */,
@@ -107,6 +113,7 @@
 		5E242A7F2A863E8D00F8F79F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E242A812A8A1F0B00F8F79F /* SwipeTableViewController.swift */,
 				5E242A762A8635DB00F8F79F /* CategoryViewController.swift */,
 				5E242A782A86361800F8F79F /* TodoListViewController.swift */,
 			);
@@ -119,6 +126,15 @@
 				5E242A612A824B8C00F8F79F /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5E242A852A8A521900F8F79F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5E242A832A8A51F200F8F79F /* ColorExtension.swift */,
+				5E242A862A8A52E200F8F79F /* SearchBarExtension.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		9C8A0D2EAD4FB44C132B0B57 /* Frameworks */ = {
@@ -180,7 +196,7 @@
 			);
 			mainGroup = 5E242A4F2A824B8C00F8F79F;
 			packageReferences = (
-				5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift.git" */,
+				5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 5E242A592A824B8C00F8F79F /* Products */;
 			projectDirPath = "";
@@ -252,9 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E242A7B2A863D4400F8F79F /* Item.swift in Sources */,
+				5E242A872A8A52E200F8F79F /* SearchBarExtension.swift in Sources */,
 				5E242A772A8635DB00F8F79F /* CategoryViewController.swift in Sources */,
 				5E242A5C2A824B8C00F8F79F /* AppDelegate.swift in Sources */,
+				5E242A822A8A1F0B00F8F79F /* SwipeTableViewController.swift in Sources */,
 				5E242A5E2A824B8C00F8F79F /* SceneDelegate.swift in Sources */,
+				5E242A842A8A51F200F8F79F /* ColorExtension.swift in Sources */,
 				5E242A792A86361800F8F79F /* TodoListViewController.swift in Sources */,
 				5E242A7D2A863D5700F8F79F /* Category.swift in Sources */,
 			);
@@ -480,7 +499,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
+		5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -493,12 +512,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		5E242A702A862DF900F8F79F /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = 5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
 		5E242A722A862DF900F8F79F /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = 5E242A6F2A862DF900F8F79F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
